@@ -1,0 +1,70 @@
+.container {
+  height: 100vh;
+  background-color: #232323;
+  display: flex;
+  overflow: hidden;
+
+}
+
+.page {
+  width: 100%;
+  margin: auto;
+  padding: 0px 10vw;
+  font-size: 48px;
+}
+
+.page-title {
+  color: white;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  text-align: right;
+  // width: 100%;
+  margin: auto;
+}
+
+.page-body {
+  // width: 100%;
+  color: white;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+}
+
+.name {
+  color: #cc3333
+}
+
+@media (max-width: 360px) {
+  .page {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 768px) {
+  .page {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 670px) and (max-width: 768px) {
+  .page {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .page {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .page {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .page {
+    font-size: 52px;
+  }
+}

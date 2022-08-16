@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="nav">
+    <div (click)="onXta5yClicked()" data-aos="fade" data-aos-duration="1500" class="top-left">
+      <img class="logo" src="assets\images\xta5y_black.png">
+    </div>
+
+    <div data-aos="fade" data-aos-duration="1500" class="top-right">
+      <div class="nav-list">
+        <li (click)="onAboutMeClicked()" class="nav-item">About me</li>
+        <li (click)="onWorksClicked()" class="nav-item">Works</li>
+        <li (click)="onContactsClicked()" class="nav-item nav-last-item">Contacts</li>
+      </div>
+      <i class="fa fa-bars nav-menu" aria-hidden="true" (click)="isMenuShown = !isMenuShown"></i>
+    </div>
+  </div>
+
+  <div *ngIf="isMenuShown" [@fadeInOnEnter] [@fadeOutOnLeave] class="nav-menu-list">
+    <li class="nav-menu-list-item">
+      <div (click)="onAboutMeClicked()" class="nav-menu-list-item-text">
+        About me
+      </div>
+    </li>
+    <li class="nav-menu-list-item">
+      <div (click)="onWorksClicked()" class="nav-menu-list-item-text">
+        Works
+      </div>
+    </li>
+    <li class="nav-menu-list-item">
+      <div (click)="onContactsClicked()" class="nav-menu-list-item-text">
+        Contacts
+      </div>
+    </li>
+  </div>
+</div>

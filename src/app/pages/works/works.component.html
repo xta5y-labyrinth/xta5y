@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="page">
+    <div data-aos="fade-left" data-aos-duration="1500" class="page-title">
+      Works
+    </div>
+
+    <div class="page-body" data-aos="fade-left" data-aos-duration="1500">
+      <div class="page-left">
+        <i *ngIf="worksCounter > 0" class="fa fa-chevron-left" aria-hidden="true" (click)="onLeftArrowClick()"></i>
+      </div>
+      <div class="white-background">
+        <div class="work-body">
+          <div class="work-image-div">
+            <img *ngIf="worksCounter == 0" [@fadeInOnEnter] [@fadeOutOnLeave] class="work-image"
+              src="assets\images\crashed-sample.png">
+            <img *ngIf="worksCounter == 1" [@fadeInOnEnter] [@fadeOutOnLeave] class="work-image"
+              src="assets\images\crashed-sample.png">
+          </div>
+          <div class="work-body-spacing"></div>
+          <div class="work-text">
+            <div *ngIf="worksCounter == 0" [@fadeInOnEnter] [@fadeOutOnLeave] class="work-body-absolute">
+              <div class="work-text-title">
+                <em>
+                  Crashed
+                </em>
+              </div>
+              <div class="work-text-body">
+                <div>
+                  A casual rhythm game that can be played with<br>
+                  just one finger. Playable in android platform.<br>
+                  Created with unity engine.
+                </div>
+              </div>
+
+              <div class="work-text-buttons">
+                <div class="view-playstore-button">View on playstore</div>
+                <div class="view-article-button">View article</div>
+                <div class="work-text-buttons-spacing"></div>
+              </div>
+            </div>
+            <div *ngIf="worksCounter == 1" [@fadeInOnEnter] [@fadeOutOnLeave] class="work-body-absolute">
+              <div class="work-text-title">
+                <em>
+                  Splinterlands Tracker
+                </em>
+              </div>
+              <div class="work-text-body">
+                <div>
+                  A simple tracker for splinterlands accounts<br>
+                  Uses splinterlands api for requesting live data<br>
+                  Created with angular framework.
+                </div>
+              </div>
+
+              <div class="work-text-buttons">
+                <div class="view-playstore-button">View on playstore</div>
+                <div class="view-article-button">View article</div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="page-right">
+        <i *ngIf="worksCounter < worksCount - 1" class="fa fa-chevron-right" aria-hidden="true"
+          (click)="onRightArrowClick()"></i>
+      </div>
+    </div>
+  </div>
+</div>

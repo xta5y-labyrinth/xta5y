@@ -1,0 +1,204 @@
+.container {
+  display: flex;
+  background-color: #232323;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page {
+  width: 100%;
+  margin: auto;
+  flex-direction: row;
+}
+
+.page-body {
+  width: 100%;
+  display: flex;
+}
+
+.page-left {
+  flex: 1;
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 32px;
+}
+
+.page-right {
+  flex: 1;
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 32px;
+}
+
+.page-title {
+  color: white;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  text-align: right;
+  padding-right: 10vw;
+  font-size: 48px;
+  padding-bottom: 8px;
+}
+
+.white-background {
+  display: flex;
+  width: 100%;
+  height: 55vh;
+  flex: 8;
+  background: linear-gradient(to right,
+      #232323 0%,
+      #232323 40%,
+      #e8e7e7 40%,
+      #e8e7e7 100%);
+}
+
+.work-body {
+  width: 100%;
+  display: flex;
+  height: 80%;
+  margin: auto;
+  flex-direction: row;
+}
+
+.work-image-div {
+  flex: 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  // background-color: aqua;
+  position: relative;
+  justify-content: center;
+}
+
+.work-image {
+  margin: auto;
+  border: 4px solid #e8e7e7;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: absolute;
+  width: 100%;
+  // height: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+.work-body-spacing {
+  flex: 0.5;
+}
+
+.work-text {
+  display: flex;
+  flex: 5;
+  margin: auto;
+  font-family: 'EB Garmont', serif;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.work-body-absolute {
+  position: absolute;
+  margin: auto;
+}
+
+.work-text-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.work-text-body {
+  font-size: 24px;
+}
+
+.work-text-buttons {
+  display: flex;
+  flex-direction: row;
+  padding-top: 8px;
+  font-size: 18px;
+}
+
+.view-playstore-button {
+  border: 2px solid black;
+  border-radius: 8px;
+  height: 100%;
+  padding: 8px 8px;
+  text-align: center;
+  margin-right: 8px;
+}
+
+.view-article-button {
+  border: 2px solid black;
+  border-radius: 8px;
+  height: 100%;
+  padding: 8px 8px;
+  text-align: center;
+}
+
+
+@media (max-width: 640px) {
+  .white-background {
+    background: linear-gradient(to bottom,
+        #232323 0%,
+        hsl(0, 0%, 14%) 30%,
+        #e8e7e7 30%,
+        #e8e7e7 100%);
+    height: 80vw;
+  }
+
+  .work-body {
+    flex-direction: column;
+  }
+
+  .work-text-title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .work-text-body {
+    font-size: 14px;
+  }
+
+  .work-image-div {
+    width: 90%;
+    margin: auto;
+    flex: 3.5;
+  }
+
+  .work-text {
+    flex: 6.5;
+    justify-content: center;
+  }
+
+  .view-playstore-button {
+    font-size: 12px;
+    flex: 5;
+  }
+
+  .view-article-button {
+    font-size: 12px;
+    flex: 3.5;
+  }
+
+  .work-image {
+    margin: auto;
+  }
+
+  .page-title {
+    font-size: 34px;
+  }
+
+  .page-left {
+    font-size: 14px;
+  }
+
+  .page-right {
+    font-size: 14px;
+  }
+
+  .work-body-spacing {
+    flex: 2;
+  }
+}
