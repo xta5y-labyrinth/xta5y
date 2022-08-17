@@ -1,12 +1,13 @@
 <div class="container">
   <div class="page">
-    <div data-aos="fade-left" data-aos-duration="1500" class="page-title">
+    <div class="page-title" data-aos="fade-left" data-aos-duration="1500">
       Works
     </div>
 
     <div class="page-body" data-aos="fade-left" data-aos-duration="1500">
       <div class="page-left">
-        <i *ngIf="worksCounter > 0" class="fa fa-chevron-left" aria-hidden="true" (click)="onLeftArrowClick()"></i>
+        <span class="material-icons icon-cursor" *ngIf=" worksCounter> 0" (click)="onLeftArrowClick()">chevron_left
+        </span>
       </div>
       <div class="white-background">
         <div class="work-body">
@@ -64,8 +65,8 @@
       </div>
 
       <div class="page-right">
-        <i *ngIf="worksCounter < worksCount - 1" class="fa fa-chevron-right" aria-hidden="true"
-          (click)="onRightArrowClick()"></i>
+        <span class="material-icons icon-cursor" *ngIf="worksCounter < worksCount - 1" aria-hidden="true"
+          (click)="onRightArrowClick()">chevron_right</span>
       </div>
     </div>
   </div>

@@ -21,7 +21,10 @@
   color: white;
   text-align: center;
   margin: auto;
-  font-size: 32px;
+}
+
+.icon-cursor {
+  font-size: 62px;
 }
 
 .page-right {
@@ -200,5 +203,15 @@
 
   .work-body-spacing {
     flex: 2;
+  }
+
+  .icon-cursor {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .work-text-body {
+    font-size: 12px;
   }
 }
